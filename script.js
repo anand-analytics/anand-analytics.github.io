@@ -118,7 +118,7 @@
 
     /* ---------- TYPEWRITER ---------- */
     const typedEl = $('#typed');
-    const phrases = ['Data Analyst', 'BI Developer', 'HR Analyst'];
+    const phrases = ['Data Analyst', 'PowerBI Developer', 'HR Analyst'];
 
     if (typedEl && !reduceMotion) {
         let p = 0, c = 0, deleting = false;
