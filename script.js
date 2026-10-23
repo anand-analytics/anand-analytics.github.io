@@ -226,7 +226,7 @@
 
             if (form.action.includes('YOUR_FORM_ID')) {
                 statusEl.className = 'form-status err';
-                statusEl.textContent = 'Form is not connected yet. Email me directly at anand.k.100@outlook.com.';
+                statusEl.textContent = 'Form is not connected yet. Email me directly at anand.k100@outlook.com.';
                 return;
             }
 
@@ -250,7 +250,7 @@
                 }
             } catch (err) {
                 statusEl.className = 'form-status err';
-                statusEl.textContent = 'Message not sent. Email me directly at anand.k.100@outlook.com.';
+                statusEl.textContent = 'Message not sent. Email me directly at anand.k100@outlook.com.';
             } finally {
                 submitBtn.disabled = false;
             }
