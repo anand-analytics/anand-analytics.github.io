@@ -1009,6 +1009,15 @@ footer {
         transition-duration: 0.01ms !important;
         transition-delay: 0s !important;
     }
+    .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 700px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
     .js .hero-anim,
     .js .reveal { opacity: 1; transform: none; }
