@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anandakrishnan | Data Analyst Portfolio</title>
+
+    <!-- SEO + share preview. Replace the og:url / og:image domain with your real GitHub Pages URL -->
+    <meta name="description" content="Anandakrishnan K, Data Analyst in Dubai. SQL, Power BI, DAX, Advanced Excel, VBA and Python (pandas, NumPy, Matplotlib). View projects and get in touch." />
+    <meta name="theme-color" content="#0b0a14" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Anandakrishnan | Data Analyst Portfolio" />
+    <meta property="og:description" content="Clean data models, automated reports and dashboards that support decisions." />
+    <meta property="og:url" content="https://anand-analytics.github.io/" />
+    <meta property="og:image" content="https://anand-analytics.github.io/images/New_Img.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%23db2777'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EAK%3C/text%3E%3C/svg%3E" />
+
+    <!-- Runs first: enables JS-only styles and applies saved theme before paint -->
+    <script>
+        document.documentElement.classList.add('js');
+        try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    </script>
+
+    <!-- Fonts + icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Intro -->
+    <div class="loader" id="loader" aria-hidden="true"><span>AK</span></div>
+
+    <!-- Effects -->
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- HEADER -->
+    <header id="header">
+        <a href="#home" class="logo" aria-label="Anandakrishnan, home">AK<span>.</span></a>
+
+        <nav id="nav" aria-label="Main">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch theme">
+                <i class="fas fa-moon icon-moon"></i>
+                <i class="fas fa-sun icon-sun"></i>
+            </button>
+            <button class="icon-btn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="section hero">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+
+            <div class="wrap hero-grid">
+                <div class="hero-text">
+                    <p class="status hero-anim" style="--i:0">
+                        <span class="pulse"></span> Open to work in Dubai
+                    </p>
+
+                    <h1 class="hero-anim" style="--i:1">
+                        <span class="hello">Hi, I'm</span>
+                        <span class="grad-text name">Anandakrishnan</span>
+                    </h1>
+
+                    <h2 class="hero-anim" style="--i:2">
+                        <span id="typed" aria-live="off">Data Analyst</span><span class="caret" aria-hidden="true"></span>
+                    </h2>
+
+                    <p class="lead hero-anim" style="--i:3">
+                        I turn raw, unstructured data into clean analytical models,
+                        automated reports, and dashboards that support decision-making.
+                    </p>
+
+                    <div class="hero-buttons hero-anim" style="--i:4">
+                        <a href="#projects" class="btn btn-primary magnetic">
+                            <i class="fas fa-chart-line"></i> View Projects
+                        </a>
+                        <a href="Anandakrishnan_Resume.pdf" class="btn btn-ghost magnetic" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image hero-anim" style="--i:2">
+                    <div class="photo-ring">
+                        <img src="images/New_Img.png" alt="Portrait of Anandakrishnan" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="stats-section" aria-label="At a glance">
+            <div class="wrap stats" data-stagger>
+                <div class="stat glass reveal">
+                    <strong class="grad-text" data-count="3">0</strong>
+                    <span>Projects</span>
+                </div>
+                <div class="stat glass reveal">
+                    <strong class="grad-text" data-count="6">0</strong>
+                    <span>Core tools</span>
+                </div>
+                <div class="stat glass reveal">
+                    <strong class="grad-text" data-count="2">0</strong>
+                    <span>Internships</span>
+                </div>
+                <div class="stat glass reveal">
+                    <strong class="grad-text">MBA</strong>
+                    <span>Finance and Marketing</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="wrap">
+                <h2 class="section-title reveal">About Me</h2>
+
+                <div class="about-grid" data-stagger>
+                    <div class="glass about-block reveal">
+                        <p>
+                            My primary focus is <strong>data analytics</strong>, with an emphasis on
+                            data preparation, analysis, and reporting. I work with Excel, SQL,
+                            Power BI and Python to clean and structure datasets, define relevant
+                            metrics, and develop dashboards that support accurate and
+                            consistent decision-making.
+                        </p>
+                        <p>
+                            I follow a disciplined approach to analytics, prioritizing
+                            <strong>data quality</strong>, clarity of logic, and repeatable
+                            workflows. I continue to strengthen my technical skills by
+                            building and documenting real-world analytics projects.
+                        </p>
+                    </div>
+
+                    <div class="glass about-role reveal">
+                        <span class="role-label">Role</span>
+                        <h3 class="grad-text">Data Analyst</h3>
+                        <p>
+                            I'm a Data Analyst with strong experience in Excel, SQL, and Power BI,
+                            focused on data preparation, KPI definition, and reporting automation.
+                        </p>
+                        <p>
+                            My work emphasizes clean data models, reproducible logic, and
+                            dashboards that answer real business questions. I enjoy working
+                            on end-to-end analytics problems, from raw data to decision-ready
+                            insights.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="wrap">
+                <h2 class="section-title reveal">Projects</h2>
+                <p class="section-subtitle reveal">
+                    End-to-end data analytics projects focused on modeling,
+                    reporting, and insight generation.
+                </p>
+
+                <div class="projects-grid" data-stagger>
+
+                    <a href="https://github.com/anand-analytics/Live-Weather-Dashboard"
+                       target="_blank" rel="noopener" class="project-link reveal">
+                        <article class="project-card glass tilt">
+                            <div class="project-img">
+                                <img src="images/weather.png" alt="Weather Analytics Dashboard" loading="lazy" />
+                            </div>
+                            <div class="project-content">
+                                <h3>Real-Time Weather Analytics Dashboard</h3>
+                                <p>
+                                    An API-driven Power BI dashboard that transforms live JSON weather
+                                    data into structured insights using Power Query, DAX, and a clean
+                                    data model. Focused on real-time KPIs, AQI monitoring, and
+                                    multi-city analysis.
+                                </p>
+                                <ul class="tags">
+                                    <li>Power BI</li><li>Power Query</li><li>DAX</li><li>API</li>
+                                </ul>
+                                <span class="project-cta"><i class="fab fa-github"></i> View on GitHub</span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="https://github.com/anand-analytics/Ola-Dashboard"
+                       target="_blank" rel="noopener" class="project-link reveal">
+                        <article class="project-card glass tilt">
+                            <div class="project-img">
+                                <img src="images/ola.png" alt="Ola Ride Analytics" loading="lazy" />
+                            </div>
+                            <div class="project-content">
+                                <h3>Ola Ride Operations Analytics</h3>
+                                <p>
+                                    An end-to-end analytics project using SQL and Power BI to analyze
+                                    ride performance, cancellations, revenue trends, and customer
+                                    behavior. Emphasizes data cleaning, SQL views, and interactive
+                                    operational dashboards.
+                                </p>
+                                <ul class="tags">
+                                    <li>SQL</li><li>Power BI</li><li>Data cleaning</li>
+                                </ul>
+                                <span class="project-cta"><i class="fab fa-github"></i> View on GitHub</span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="https://github.com/anand-analytics/HR-Analytics"
+                       target="_blank" rel="noopener" class="project-link reveal">
+                        <article class="project-card glass tilt">
+                            <div class="project-img">
+                                <img src="images/hr.png" alt="HR Analytics Dashboard" loading="lazy" />
+                            </div>
+                            <div class="project-content">
+                                <h3>HR Analytics: Employee Presence and Capacity Planning</h3>
+                                <p>
+                                    A Power BI solution that converts raw attendance data into
+                                    actionable HR insights. Uses Power Query for transformation and
+                                    DAX for presence, WFH, and wellness metrics to support workforce
+                                    planning decisions.
+                                </p>
+                                <ul class="tags">
+                                    <li>Power BI</li><li>Power Query</li><li>DAX</li>
+                                </ul>
+                                <span class="project-cta"><i class="fab fa-github"></i> View on GitHub</span>
+                            </div>
+                        </article>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="wrap">
+                <h2 class="section-title reveal">Skills</h2>
+
+                <!-- Edit the --level value (0 to 100%) to change each bar -->
+                <div class="skills-grid" data-stagger>
+
+                    <div class="skill-card glass reveal" style="--level:65%">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <h3>Python</h3>
+                        <p class="skill-sub">pandas, NumPy, Matplotlib</p>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+
+                    <div class="skill-card glass reveal" style="--level:90%">
+                        <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+                        <h3>Advanced Excel</h3>
+                        <p class="skill-sub">Formulas, pivots, modeling</p>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+
+                    <div class="skill-card glass reveal" style="--level:85%">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>SQL</h3>
+                        <p class="skill-sub">Queries, views, cleaning</p>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+
+                    <div class="skill-card glass reveal" style="--level:85%">
+                        <div class="skill-icon"><i class="fas fa-square-root-variable"></i></div>
+                        <h3>DAX</h3>
+                        <p class="skill-sub">Measures and KPIs</p>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+
+                    <div class="skill-card glass reveal" style="--level:90%">
+                        <div class="skill-icon"><i class="fas fa-chart-column"></i></div>
+                        <h3>Power BI</h3>
+                        <p class="skill-sub">Data models and dashboards</p>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+
+                    <div class="skill-card glass reveal" style="--level:75%">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>VBA Macro</h3>
+                        <p class="skill-sub">Excel automation</p>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="wrap">
+                <h2 class="section-title reveal">Contact</h2>
+                <p class="section-subtitle reveal">
+                    Hiring for a data or HR analytics role, or have a question? Send a message.
+                </p>
+
+                <div class="contact-grid" data-stagger>
+
+                    <div class="glass contact-card reveal">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span>Phone</span>
+                                <p><a href="tel:+971563557471">+971 563557471</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <p><a href="mailto:anand.k.100@outlook.com">anand.k.100@outlook.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <div>
+                                <span>Location</span>
+                                <p>Dubai, UAE</p>
+                            </div>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/anandakrishnan-k-696056296"
+                               target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/anand-analytics"
+                               target="_blank" rel="noopener" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:anand.k.100@outlook.com" aria-label="Send email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Replace YOUR_FORM_ID with your Formspree form ID (formspree.io) -->
+                    <form class="glass contact-form reveal" id="contactForm"
+                          action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <label for="cf-name">Name</label>
+                        <input id="cf-name" name="name" type="text" autocomplete="name" required />
+
+                        <label for="cf-email">Email</label>
+                        <input id="cf-email" name="email" type="email" autocomplete="email" required />
+
+                        <label for="cf-message">Message</label>
+                        <textarea id="cf-message" name="message" rows="5" required></textarea>
+
+                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+
+                        <button type="submit" class="btn btn-primary magnetic">
+                            <i class="fas fa-paper-plane"></i> Send message
+                        </button>
+                        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Anandakrishnan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
